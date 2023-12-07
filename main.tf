@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_instance" "web_server" {
   ami           = "ami-04e914639d0cca79a"
-  instance_type = "t2.medium"
+  instance_type = "t3a.medium"
 
   tags = {
     Name = "testinginfracost"
