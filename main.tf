@@ -20,3 +20,19 @@ resource "aws_instance" "web_server" {
     Name = "testinginfracost"
   }
 }
+resource "aws_instance" "demo_server" {
+  ami           = "ami-04e914639d0cca79a"
+  instance_type = "t3.medium"
+
+  tags = {
+    Name = "testinginfracost"
+  }
+}
+resource "aws_instance" "database_server" {
+  ami           = "ami-04e914639d0cca79a"
+  instance_type = "t3a.medium"
+
+  tags = {
+    Name = "testinginfracost"
+  }
+}
